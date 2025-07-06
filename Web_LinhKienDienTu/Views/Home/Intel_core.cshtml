@@ -1,0 +1,30 @@
+﻿@model List<Web_LinhKienDienTu.DTO.SanPham_Model>
+@{
+    ViewBag.Title = "Intel_core";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+
+@Html.AntiForgeryToken()
+@section scripts {
+    <script>
+        const sanPham_Intel_Data = @Html.Raw(Json.Encode(Model));
+        console.log(sanPham_Intel_Data);
+    </script>
+    <script src="~/Scripts/MyJavascript.js"></script>
+}
+
+@if (Session["Email"] != null)
+{
+    <div class="col-12">
+        <h5 class="text-center fw-bold">Intel_Core</h5>
+        <hr class="bg-dark">
+        <div id="Intel" class="row">
+
+        </div>
+    </div>
+}
+else
+{
+<button class="btn btn-primary text-white mx-auto"><a href="/Home/DangNhap">Đăng Nhập</a></button>
+}
+

@@ -1,0 +1,60 @@
+﻿@model List<Web_LinhKienDienTu.DTO.LichSuMuaHang_Model>
+
+@{
+    ViewBag.Title = "Quản Lý Đơn Hàng";
+    Layout = "~/Views/Shared/_Layout_User.cshtml"; }
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center text-primary">QUẢN LÝ ĐƠN HÀNG</h2>
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Tên người nhận</th>
+                <th>SĐT</th>
+                <th>Địa chỉ</th>
+                <th>Ngày đặt</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th>Email tài khoản</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                int stt = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@(stt++)</td>
+                        <td>@item.TenNguoiNhan</td>
+                        <td>@item.SDT</td>
+                        <td>@item.DiaChi</td>
+                        <td>@item.NgayDat.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@item.TongTien.GetValueOrDefault().ToString("N0")  đ</td>
+                        <td>
+                            <span class="badge @(item.DaThanhToan == "Da thanh toan" ? "bg-success" : "bg-warning text-dark")">
+                                @item.DaThanhToan
+                            </span>
+                        </td>
+                        <td>@item.Email</td>
+                        <td>
+                            <!-- Tùy chọn hành động như xem chi tiết, xóa... -->
+                            <a href="@Url.Action("ChiTietDonHang", "Home", new { id = item.Id })" class="btn btn-sm btn-info">Chi tiết</a>
+                            <a href="@Url.Action("XoaDonHang", "Home", new { id = item.Id })" class="btn btn-sm btn-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?');">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9" class="text-center text-muted">Không có đơn hàng nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

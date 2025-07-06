@@ -1,0 +1,16 @@
+﻿@model Web_LinhKienDienTu.DTO.LichSuMuaHang_Model
+@{
+    ViewBag.Title = "ChiTiet";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+<div class="container mt-3">
+    <h4>Chi tiết đơn hàng: #@Model.Id</h4>
+    <p><strong>Người nhận:</strong> @Model.TenNguoiNhan</p>
+    <p><strong>SĐT:</strong> @Model.SDT</p>
+    <p><strong>Địa chỉ:</strong> @Model.DiaChi</p>
+    <p><strong>Ngày đặt:</strong> @Model.NgayDat?.ToString("dd/MM/yyyy HH:mm")</p>
+    <p><strong>Tổng tiền:</strong> @Model.TongTien?.ToString("N0") VND</p>
+    <p><strong>Trạng thái:</strong> @Model.DaThanhToan</p>
+
+    <a href="@Url.Action("QlDonHang", "Home")" class="btn btn-secondary mt-3">Quay lại</a>
+</div>

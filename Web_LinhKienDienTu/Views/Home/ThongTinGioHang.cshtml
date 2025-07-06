@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "ThongTinGioHang";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+
+
+}
+@Html.AntiForgeryToken()
+@section scripts {
+    <script>
+        const sanPham_GioHang = @Html.Raw(Json.Encode(Model));
+        const sanPhamData = JSON.parse(localStorage.getItem("sanPhamData"));
+
+        
+    </script>
+    <script src="~/Scripts/MyJavascript.js"></script>
+}
+
+
+@if (Session["Email"] != null)
+{
+    <div>
+        <div class="row" id="page-cart">
+            <div class="col-md-4 p-3 border-end">
+                <h5 class="fw-bold">Xin chào @Session["Hoten"]</h5>
+                <div class="mt-3">
+                    <label>Tỉnh/Thành phố</label>
+                    <select id="selectTinh" class="form-control"></select>
+
+                    <label class="mt-2">Quận/Huyện</label>
+                    <select id="selectQuan" class="form-control"></select>
+
+                    <label class="mt-2">Phường/Xã</label>
+                    <select id="selectXa" class="form-control"></select>
+                </div>
+
+                <div class="mt-3">
+                    <label>Người nhận:</label>
+                    <input id="tenNguoiNhan" class="form-control" placeholder="Nguyễn Văn A" />
+
+                    <label class="mt-2">SĐT:</label>
+                    <input id="sdt" class="form-control" placeholder="0123456789" />
+
+                    <label class="mt-2">Địa chỉ chi tiết:</label>
+                    <input id="diaChi" class="form-control" placeholder="Số nhà, đường..." />
+                </div>
+
+                <div class="mt-3">
+                    <label class="fw-bold">Phương thức thanh toán:</label>
+
+                    <div class="accordion mt-2" id="accordionPTTT">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePTTT" aria-expanded="false" aria-controls="collapsePTTT">
+                                    Chọn phương thức thanh toán
+                                </button>
+                            </h2>
+                            <div id="collapsePTTT" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPTTT">
+                                <div class="accordion-body px-2 py-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="phuongThucThanhToan" id="pttt_cod" value="COD" checked>
+                                        <label class="form-check-label d-flex align-items-center" for="pttt_cod">
+                                            <i class="fas fa-money-bill-wave text-success me-2"></i> Thanh toán khi nhận hàng (COD)
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="phuongThucThanhToan" id="pttt_vnpay" value="VNPAY">
+                                        <label class="form-check-label d-flex align-items-center" for="pttt_vnpay">
+                                            <i class="fas fa-university text-primary me-2"></i> Thanh toán online qua VNPAY
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="phuongThucThanhToan" id="pttt_momo" value="MOMO">
+                                        <label class="form-check-label d-flex align-items-center" for="pttt_momo">
+                                            <i class="fas fa-mobile-alt text-danger me-2"></i> Ví điện tử MOMO
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-4 text-danger fw-bold" id="tongTien">Tổng tiền: 0 VNĐ</div>
+                <div class="d-flex justify-content-between gap-2 mt-2">
+                    <button class="btn btn-success flex-fill" id="btnDatHang">Thanh toán</button>
+                    <button class="btn btn-info flex-fill" id="btnLichSu">Lịch sử mua hàng</button>
+                </div>
+
+            </div>
+
+            <div class="col-md-8 p-3 overflow-auto" style="height:568px;" id="container">
+                <!-- Sản phẩm giỏ hàng sẽ render bằng JS -->
+            </div>
+            <div class="modal fade" id="lichSuModal" tabindex="-1" aria-labelledby="lichSuLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content shadow">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title" id="lichSuLabel">🛒 Lịch sử mua hàng</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                        </div>
+                        <div class="modal-body p-3" id="lichSuContent" style="max-height: 400px; overflow-y: auto;">
+                            <p class="text-muted">Đang tải dữ liệu...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+}
+else
+{
+    <p class="text-center">
+        <a href="/Home/DangNhap" class="btn btn-primary">Đăng nhập để tiếp tục</a>
+    </p>
+}
+
+

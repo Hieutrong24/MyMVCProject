@@ -1,0 +1,113 @@
+﻿@model List<Web_LinhKienDienTu.DTO.ThongKeDoanhThu_Model>
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+@section scripts{
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/Scripts/MyJavascript.js"></script>
+}
+
+<div class="container mt-1 border border-3 rounded-2 p-3">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card text-white bg-light border shadow-sm">
+                <div class="card-body text-dark">
+                    <h4 class="card-title">69.927.500 <span style="font-size: 0.8em;">₫</span></h4>
+                    <p class="card-text">Số dư tài khoản</p>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Nạp tiền</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-warning border shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">0</h4>
+                    <p class="card-text">Thanh toán chờ</p>
+                    <a href="#" class="btn btn-light btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-info border shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">75</h4>
+                    <p class="card-text">Yêu cầu nạp tiền mới</p>
+                    <a href="#" class="btn btn-light btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-primary border shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">12</h4>
+                    <p class="card-text">Khách hàng mới</p>
+                    <a href="#" class="btn btn-light btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-success border shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">0</h4>
+                    <p class="card-text">VPS chờ tạo</p>
+                    <a href="#" class="btn btn-light btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-danger border shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">58</h4>
+                    <p class="card-text">VPS hết hạn</p>
+                    <a href="#" class="btn btn-light btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="border rounded-2 border-2">
+    <div class="border-bottom bg-info text-center"><h5 class="p-1">Thống kê doanh thu</h5></div>
+    <div class="row row-cols-lg-2 row-cols-1">
+        <div style="width:400px; margin:auto;">
+            <canvas id="myPieChart"></canvas>
+        </div>
+
+        <div class="col-lg-5 col-12">
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="table-dark text-center align-middle">
+                            <tr>
+                                <th>Tên khách hàng</th>
+                                <th>Số lượng đơn hàng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="text-center align-middle">
+                                    <td>@item.TenKhachHang</td>
+                                    <td>@item.SoDonHang</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <p class="text-danger text-center">Model bị null</p>
+            }
+        </div>
+    </div>
+</div>
+

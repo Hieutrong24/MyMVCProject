@@ -1,0 +1,68 @@
+﻿@model List<Web_LinhKienDienTu.DTO.QLNguoiDung_Model>
+@{
+    ViewBag.Title = "Quản lý người dùng";
+    Layout = "~/Views/Shared/_Layout_User.cshtml"; // Hoặc _Layout.cshtml phù hợp
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">QUẢN LÝ NGƯỜI DÙNG</h2>
+
+    <div class="mb-3">
+        <input type="text" class="form-control" id="searchInput" placeholder="🔍 Tìm kiếm theo Họ tên hoặc Email...">
+    </div>
+
+    <table class="table table-bordered table-striped" id="userTable">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>#</th>
+                <th>Email</th>
+                <th>Mật khẩu</th>
+                <th>Họ tên</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                int stt = 1;
+                foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@(stt++)</td>
+                        <td>@user.Email</td>
+                        <td>@user.MatKhau</td>
+                        <td>@user.HoTen</td>
+                        <td>@user.SDT</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-danger">Không có người dùng nào!</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts {
+    <script>
+        // Tìm kiếm client-side
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            var searchText = this.value.toLowerCase();
+            var rows = document.querySelectorAll("#userTable tbody tr");
+
+            rows.forEach(function (row) {
+                var name = row.cells[3].textContent.toLowerCase(); // Họ tên
+                var email = row.cells[1].textContent.toLowerCase(); // Email
+
+                if (name.includes(searchText) || email.includes(searchText)) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    </script>
+}

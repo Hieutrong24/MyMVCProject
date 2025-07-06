@@ -1,0 +1,200 @@
+﻿@model Web_LinhKienDienTu.DTO.QuanLyDanhMucViewModel
+
+@{
+    ViewBag.Title = "Quản lý Danh Mục và Chi tiết Danh Mục";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Quản lý Danh Mục</h2>
+
+    <!-- Nút mở modal thêm danh mục -->
+    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addDanhMucModal">
+        <i class="fa fa-plus"></i> Thêm danh mục
+    </button>
+
+    <!-- Modal Thêm Danh Mục -->
+    <div class="modal fade" id="addDanhMucModal" tabindex="-1" aria-labelledby="addDanhMucLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="formThemDanhMuc" method="post" action="@Url.Action("Create", "Home")">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addDanhMucLabel">Thêm danh mục mới</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="formAlert" class="alert d-none" role="alert"></div>
+
+                        <div class="mb-3">
+                            <label for="TenDanhMuc" class="form-label">Tên danh mục</label>
+                            <input type="text" class="form-control" id="TenDanhMuc" name="Name" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Danh sách danh mục -->
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Tên danh mục</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var danhMuc in Model.DanhMucs)
+            {
+                <tr>
+                    <td>@danhMuc.Id</td>
+                    <td>@danhMuc.Name</td>
+                    <td>
+                        <a href="@Url.Action("Delete", "Home", new { id = danhMuc.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Xóa danh mục này?');">
+                            <i class="fa fa-trash"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Chi tiết danh mục -->
+    <h2 class="mb-4 mt-5">Chi tiết Danh Mục</h2>
+
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalChiTiet">
+        <i class="fa fa-plus"></i> Thêm chi tiết danh mục
+    </button>
+    <div class="modal fade" id="modalChiTiet" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thêm chi tiết danh mục</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Tên chi tiết</label>
+                        <input type="text" class="form-control" id="chiTietName" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Danh mục</label>
+                        <select class="form-select" id="chiTietDanhMuc">
+                            @foreach (var dm in ViewBag.DanhMucs )
+                            {
+                                <option value="@dm.Value">@dm.Text</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="createChiTiet()">Lưu</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Tên chi tiết</th>
+                <th>Thuộc danh mục</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ct in Model.ChiTietDanhMucs)
+            {
+                <tr>
+                    <td>@ct.Id</td>
+                    <td>@ct.Name</td>
+                    <td>@ct.TenDanhMuc</td>
+                    <td>
+                        <a href="@Url.Action("DeleteChiTiet", "Home", new { id = ct.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Xóa chi tiết danh mục này?');">
+                            <i class="fa fa-trash"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#formThemDanhMuc").submit(function (e) {
+                e.preventDefault();  
+
+                const form = $(this);
+                const formData = form.serialize();
+
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            $("#formAlert")
+                                .removeClass("d-none alert-danger")
+                                .addClass("alert-success")
+                                .text(response.message);
+
+                            $("#TenDanhMuc").val(""); // Xóa input
+
+                            setTimeout(() => {
+                                $("#addDanhMucModal").modal('hide');
+                                location.reload();  
+                            }, 1000);
+                        } else {
+                            $("#formAlert")
+                                .removeClass("d-none alert-success")
+                                .addClass("alert-danger")
+                                .text(response.message);
+                        }
+                    },
+                    error: function () {
+                        $("#formAlert")
+                            .removeClass("d-none alert-success")
+                            .addClass("alert-danger")
+                            .text("Lỗi khi gửi dữ liệu.");
+                    }
+                });
+            });
+        });
+        function createChiTiet() {
+            const name = document.getElementById("chiTietName").value;
+            const idDanhMuc = parseInt(document.getElementById("chiTietDanhMuc").value);
+
+            fetch("/Home/CreateChiTiet", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ Name: name, IdDanhMuc: idDanhMuc })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                        location.reload();  
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(err => {
+                    console.error("Lỗi:", err);
+                    alert("Lỗi khi thêm chi tiết danh mục.");
+                });
+        }
+
+    </script>
+}

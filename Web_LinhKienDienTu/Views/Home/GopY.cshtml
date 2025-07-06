@@ -1,0 +1,73 @@
+﻿@model Web_LinhKienDienTu.DTO.GopY_PhanHoi
+
+@{
+    ViewBag.Title = "Góp Ý";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+@section scripts{
+        <script src="~/Scripts/MyJavascript.js"></script>
+    }
+@if (Session["Email"] != null)
+{
+    <div class="w-50 mx-auto bg-dark-subtle rounded-3 p-3 mt-3">
+        <h3 class="text-center mb-3">Form Góp Ý & Phản Hồi</h3>
+
+        @using (Html.BeginForm("GopY", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="mb-3">
+                <label class="form-label">Họ tên</label>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Nhập họ tên" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Số điện thoại</label>
+                @Html.TextBoxFor(m => m.SDT, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Nhập email", type = "email" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Địa chỉ</label>
+                @Html.TextBoxFor(m => m.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Phản hồi / Góp ý</label>
+                @Html.TextAreaFor(m => m.Comment, 4, 40, new { @class = "form-control", placeholder = "Nhập nội dung phản hồi" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Upload ảnh (tùy chọn)</label><br />
+                <input type="file" name="image" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tài liệu đính kèm (tùy chọn)</label><br />
+                <input type="file" name="document" />
+            </div>
+
+            <div class="text-center">
+                <input class="btn btn-primary" type="submit" value="Gửi Góp Ý" />
+            </div>
+        }
+
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-success mt-3">@ViewBag.Message</div>
+        }
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger mt-3">@ViewBag.Error</div>
+        }
+    </div>
+}
+else
+{
+    <div class="container text-center mt-4">
+        <a href="/Home/DangNhap" class="btn btn-outline-danger">Đăng nhập để gửi góp ý</a>
+    </div>
+}

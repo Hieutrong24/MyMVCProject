@@ -1,0 +1,36 @@
+﻿@model List<Web_LinhKienDienTu.DTO.SanPham_Model>
+@{
+    ViewBag.Title = "Amd_ryzen";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+
+@*@Html.AntiForgeryToken()*@
+@section scripts {
+    <script>
+        const sanPham_Intel_Data = @Html.Raw(Json.Encode(Model));
+        console.log(sanPham_Intel_Data);
+    </script>
+    <script src="~/Scripts/MyJavascript.js"></script>
+}
+
+@if (Session["Email"] != null)
+{
+    <div class="col-12">
+        <h5 class="text-center fw-bold">AMD Ryzen</h5>
+        <hr class="bg-dark">
+        <div id="ryzen" class="row">
+
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center mt-3">
+        <a href="/Home/DangNhap" class="btn btn-primary text-white fw-bold px-4">
+            Đăng Nhập
+        </a>
+    </div>
+
+}
+
+

@@ -1,0 +1,40 @@
+﻿@model Web_LinhKienDienTu.Models.SanPham
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+@section scripts {
+    <script>
+        window.sp = {
+            Id: @Model.ID,
+            ten: "@Model.TENSP",
+            gia: @Model.GIAHT,
+            hinh: "@Model.IMG"
+        };
+        const sanPhamData = JSON.parse(localStorage.getItem("sanPhamData"));
+    </script>
+
+    <script src="~/Scripts/MyJavascript.js"></script>
+}
+
+<div class="container mt-4">
+    <div class="row ">
+        <div class="col">
+            <img src="@Model.IMG" alt="@Model.TENSP" class="img-fluid" style="max-width: 300px;" />
+        </div>
+        <div class="col">
+            <h2>@Model.TENSP</h2>
+            <p><strong>Giá:</strong> @Model.GIAHT  VNĐ</p>
+            <p><strong>Giá gốc: </strong><s>@Model.GIAGOC </s>VND</p>
+            <p><strong>Mô tả:</strong> @Model.MOTA</p>
+
+            <button type="button" class="btn btn-outline-danger" id="chiTietSanPham">
+                <i class="fas fa-shopping-cart align-self-center text-danger"></i> Thêm vào giỏ
+            </button>
+
+        </div>
+    </div>
+
+
+</div>
+

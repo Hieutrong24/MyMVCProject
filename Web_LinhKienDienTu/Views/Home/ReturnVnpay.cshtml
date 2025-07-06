@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Kết quả thanh toán";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-0">
+                <div class="card-body text-center">
+                    <h3 class="mb-4 text-primary">Kết quả thanh toán qua VNPAY</h3>
+
+                    <div class="alert @(ViewBag.Message.ToString().Contains("thành công") ? "alert-success" : "alert-danger") fs-5">
+                        @ViewBag.Message
+                    </div>
+
+                    <hr />
+
+                    <div class="text-start px-3">
+                        @{
+                            long amount = 0;
+                            bool isAmountValid = long.TryParse(Convert.ToString(ViewBag.Amount), out amount);
+                        }
+
+                        @if (isAmountValid && amount > 0)
+                        {
+                            <p><strong>Số tiền:</strong> @((amount / 100).ToString("N0")) VND</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(ViewBag.OrderInfo as string))
+                        {
+                            <p><strong>Thông tin đơn hàng:</strong> @ViewBag.OrderInfo</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(ViewBag.PayDate as string))
+                        {
+                            <p><strong>Ngày thanh toán:</strong> @ViewBag.PayDate</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(ViewBag.BankCode as string))
+                        {
+                            <p><strong>Ngân hàng:</strong> @ViewBag.BankCode</p>
+                        }
+                    </div>
+
+                    <a href="/" class="btn btn-outline-primary mt-4">Quay về trang chủ</a>
+                </div>
+            </div>
+
+            @* Hiển thị Debug nếu có *@
+            @if (ViewBag.DebugLog != null)
+            {
+                <div class="card mt-4">
+                    <div class="card-header bg-warning text-dark fw-bold">
+                        🐞 Debug Thông Tin (chỉ hiển thị khi sai chữ ký)
+                    </div>
+                    <div class="card-body">
+                        <pre style="white-space:pre-wrap; background-color:#f8f9fa; border:1px solid #ccc; padding:10px;">
+@ViewBag.DebugLog
+                        </pre>
+                    </div>
+                </div>
+                <div class="alert alert-warning">
+                    <h5>Log dữ liệu phản hồi từ VNPAY:</h5>
+                    <pre>@ViewBag.DebugLog</pre>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>

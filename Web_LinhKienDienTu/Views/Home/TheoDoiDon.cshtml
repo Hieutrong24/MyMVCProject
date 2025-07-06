@@ -1,0 +1,70 @@
+﻿@model Web_LinhKienDienTu.DTO.DonHangGioHangModel
+@{
+    ViewBag.Title = "Theo dõi đơn hàng";
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h3 class="text-center mb-4 text-primary">Thông tin đơn hàng</h3>
+
+                    <ul class="list-group list-group-flush fs-5">
+                        <li class="list-group-item">
+                            <strong>Mã đơn hàng:</strong> @Model.MaVanDon
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Người nhận:</strong> @Model.TenNguoiNhan
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Địa chỉ:</strong> @Model.DiaChi
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Số điện thoại:</strong> @Model.SDT
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Trạng thái:</strong> <span class="text-success">@Model.TrangThai</span>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Ngày tạo đơn:</strong> @Model.NgayTao.ToString("dd/MM/yyyy HH:mm")
+                        </li>
+                    </ul>
+
+                    <hr />
+
+                    <h5 class="mt-4">Danh sách sản phẩm</h5>
+                    <table class="table table-bordered mt-2">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sp in Model.SanPhams)
+                            {
+                                <tr>
+                                    <td>@sp.TenSP</td>
+                                    <td>@sp.SoLuong</td>
+                                    <td>@sp.GiaHT.ToString("N0") ₫</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <div class="text-end mt-4 fs-5">
+                        <strong>Tổng tiền:</strong> @Model.TongTien.ToString("N0") ₫
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="/" class="btn btn-primary">Quay về trang chủ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
