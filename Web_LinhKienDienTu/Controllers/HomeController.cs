@@ -23,6 +23,7 @@ namespace Web_LinhKienDienTu.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+        string backendUrl = Environment.GetEnvironmentVariable("BACKEND_URL");
 
         public ActionResult KhachXem()
         {
