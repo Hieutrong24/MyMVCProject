@@ -1,25 +1,18 @@
-# Use the official ASP.NET runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:4.8 AS base
-WORKDIR /inetpub/wwwroot
-
-# Use SDK image to build the app
-FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build
+# Build stage
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 
-# Copy everything and build
+COPY *.sln .
+COPY Web_LinhKienDienTu/*.csproj ./Web_LinhKienDienTu/
+RUN dotnet restore
+
 COPY . .
+WORKDIR /app/Web_LinhKienDienTu
+RUN dotnet publish -c Release -o /app/publish
 
-# You may want to build with msbuild if needed
-# RUN msbuild Web_LinhKienDienTu.sln /p:Configuration=Release
-
-# Publish content
-RUN mkdir /app/publish
-RUN xcopy /s /y Web_LinhKienDienTu\bin\Release\* /app/publish\
-
-# Final image
-FROM base AS final
-WORKDIR /inetpub/wwwroot
+# Runtime stage
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+WORKDIR /app
 COPY --from=build /app/publish .
 
-# Expose port
-EXPOSE 80
+ENTRYPOINT ["dotnet", "Web_LinhKienDienTu.dll"]
