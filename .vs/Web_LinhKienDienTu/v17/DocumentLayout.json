@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\amd_ryzen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\amd_ryzen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\intel_core.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\content\\mystyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\content\\mystyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\khachxem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\khachxem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\trangchu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\trangchu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\views\\home\\intel_core.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\intel_core.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,19 +27,20 @@
       "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\shared\\_layout_user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\views\\home\\thongtingiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\thongtingiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/ASUSVIVOBOOK_SQLEXPRESS/QL_LinhKienDienTu/True/SqlTable/dbo.ThongTin_GioHang.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|d:\\workspace\\document web\\web_linhkiendientu\\web_linhkiendientu\\scripts\\myjavascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\scripts\\myjavascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\scripts\\myjavascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\views\\home\\amd_ryzen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\amd_ryzen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\views\\home\\thongtingiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|solutionrelative:web_linhkiendientu\\views\\home\\thongtingiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F0BF2D4-069B-4E7E-90D7-BB8E710C5D29}|Web_LinhKienDienTu\\Web_LinhKienDienTu.csproj|D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\web_linhkiendientu\\views\\home\\chitietsanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -73,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,7 +102,96 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\DangNhap.cshtml",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\DangNhap.cshtml",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\DangNhap.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T11:46:03.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MyStyle.css",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Content\\MyStyle.css",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Content\\MyStyle.css",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Content\\MyStyle.css",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Content\\MyStyle.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-03T11:44:10.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KhachXem.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\KhachXem.cshtml",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\KhachXem.cshtml",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\KhachXem.cshtml",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\KhachXem.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T11:40:51.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrangChu.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\TrangChu.cshtml",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\TrangChu.cshtml",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\TrangChu.cshtml",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\TrangChu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T11:38:35.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThongTinGioHang.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwGoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T18:24:07.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout_User.cshtml",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T19:41:16.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyJavascript.js",
+              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
+              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
+              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
+              "RelativeToolTip": "Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
+              "ViewState": "AgIAAEYCAAAAAAAAAAAmwB8DAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-01T17:29:03.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Intel_core.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\Intel_core.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\Intel_core.cshtml",
@@ -102,65 +204,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Amd_ryzen.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\Amd_ryzen.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\Amd_ryzen.cshtml",
               "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\Amd_ryzen.cshtml",
               "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\Amd_ryzen.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T19:27:40.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ThongTinGioHang.cshtml",
-              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
-              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
-              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
-              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\ThongTinGioHang.cshtml",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAwGoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-06T18:24:07.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.ThongTin_GioHang [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/ASUSVIVOBOOK_SQLEXPRESS/QL_LinhKienDienTu/True/SqlTable/dbo.ThongTin_GioHang.sql",
-              "ToolTip": "dbo.ThongTin_GioHang [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-07-06T18:08:37.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout_User.cshtml",
-              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
-              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
-              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
-              "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_User.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T19:41:16.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MyJavascript.js",
-              "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
-              "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
-              "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
-              "RelativeToolTip": "Web_LinhKienDienTu\\Scripts\\MyJavascript.js",
-              "ViewState": "AgIAAHYEAAAAAAAAAAAAAI4EAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-01T17:29:03.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T19:27:40.913Z"
             },
             {
               "$type": "Document",
@@ -170,14 +222,14 @@
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Web_LinhKienDienTu\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAPoBAAAAAAAAAAAiwAoCAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T05:12:01.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ChiTietSanPham.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ChiTietSanPham.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\ChiTietSanPham.cshtml",
@@ -185,12 +237,11 @@
               "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Home\\ChiTietSanPham.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T08:07:53.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T08:07:53.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "QuenMatKhau.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\QuenMatKhau.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\QuenMatKhau.cshtml",
@@ -202,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "_Layout_Form.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Shared\\_Layout_Form.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_Form.cshtml",
@@ -210,12 +261,11 @@
               "RelativeToolTip": "Web_LinhKienDienTu\\Views\\Shared\\_Layout_Form.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T03:28:15.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T03:28:15.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ReturnVnpay.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ReturnVnpay.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\ReturnVnpay.cshtml",
@@ -227,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "DanhMuc.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\DanhMuc.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\DanhMuc.cshtml",
@@ -239,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "QlDonHang.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\QlDonHang.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\QlDonHang.cshtml",
@@ -251,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ThongKeGopY.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\ThongKeGopY.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\ThongKeGopY.cshtml",
@@ -263,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "GopY_PhanHoi.cs",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\DTO\\GopY_PhanHoi.cs",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\DTO\\GopY_PhanHoi.cs",
@@ -275,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "QLSanPham.cshtml",
               "DocumentMoniker": "D:\\WorkSpace\\Document Web\\Web_LinhKienDienTu\\Web_LinhKienDienTu\\Views\\Home\\QLSanPham.cshtml",
               "RelativeDocumentMoniker": "Web_LinhKienDienTu\\Views\\Home\\QLSanPham.cshtml",
